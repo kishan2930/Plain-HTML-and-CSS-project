@@ -1,0 +1,286 @@
+@import url('https://fonts.cdnfonts.com/css/crimson-text');
+@import url('https://example.com/work-sens-text.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    text-align: center;
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #74C69D;
+    color: #FFFFFF;
+    padding: 35px 20px;
+}
+
+nav {
+    max-width: 1175px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav img {
+    width: 187px;
+    height: 50px;
+}
+
+nav button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+.hero {
+    background-color: #74C69D;
+    color: white;
+    padding-bottom: 80px;
+}
+.hero section {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.hero section img {
+    width: 645px;
+}
+.welcome-details {
+    text-align: left;
+    width: 416px;
+}
+.welcome-details p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.welcome-details h1 {
+    font-family: 'Crimson Text';
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.welcome-details p:first-child {
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.welcome-details button {
+    width: 170px;
+    height: 48px;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.partners {
+    margin-top: 60px;
+    padding-bottom: 73px;
+}
+
+.partners-heading {
+    max-width: 411px;
+    margin: 0 auto;
+   
+}
+
+.partner-title {
+    color: #74C69D;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.partner-head, .info-title {
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.partner-details {
+    font-weight: 400;
+    font-size: 20px;
+    opacity: 0.6;
+    margin-bottom: 55px;
+}
+
+.partner-logos, .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 68px;
+    list-style: none;
+    margin: 40px auto;
+}
+.partner-logos img {
+    width: 150px;
+    height: 50px;
+}
+
+.partners > button, .informations div > button, .team > button {
+    width: 170px;
+    height: 48px;
+    background-color: #212529;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.informations {
+    max-width: 1180px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.informations div {
+    max-width: 470px;
+    text-align: left;
+}
+
+.info-detail {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.informations img {
+    max-width: 600px;
+}
+
+.team {
+    padding-bottom: 54px;
+}
+.card {
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 25px;
+    box-shadow: 3px 4px 12px 1px #00000040;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.emp-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.emp-role {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    opacity: 0.5;
+}
+
+footer {
+    background-color: #74C69D;
+    color: #FFFFFF;
+    padding: 51px 131px;
+    font-size: 20px;
+}
+
+footer div {
+    max-width: 1178px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 375px) {
+    header {
+        padding: 17px 20px;
+    }
+    nav {
+        height: 38px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav img {
+        width: 129px;
+        height: auto;
+    }
+    nav button {
+        display: block;
+    }
+    .hero {
+        padding-bottom: 40px;
+    }
+    .hero section {
+        max-width: 335px;
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .hero section img, .informations img, .partners-heading, .welcome-details {
+        max-width: 335px;
+    }
+    
+    .welcome-details > h1 {
+        font-size: 28px;
+    }
+
+    .partners {
+        margin: 22px 20px 60px 20px;
+    }
+
+    .informations {
+        margin: 60px auto;
+        row-gap: 20px;
+        padding: 0 20px;
+    }
+    .informations-rev {
+        flex-direction: column-reverse;
+    }
+
+    .team {
+        padding-bottom: 40px;
+    }
+    footer {
+        padding: 31px 0;
+    }
+    footer div {
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
